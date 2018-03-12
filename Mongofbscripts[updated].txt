@@ -1,0 +1,15 @@
+
+show dbs
+
+use myUsers
+
+show collections
+
+db.createCollection('users')     --   Similar to Create Table
+
+db.users.insert({username:'Admin',password:'Admin123',gender:'male',country:'India'});
+
+db.users.insert({username:'Madhu',password:'Madhu123',gender:'male',country:'India'});
+
+db.customers.find().pretty();
+

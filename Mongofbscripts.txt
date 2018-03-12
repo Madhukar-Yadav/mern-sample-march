@@ -1,0 +1,28 @@
+db.createUser({
+	user:"Admin",
+	password:"Admin123",
+	gender:"0",
+	country:"India"
+});
+
+show dbs
+
+use myUsers
+
+show collections
+
+db.createCollection('users')     --   Similar to Create Table
+
+db.users.insert({username:'Admin',password:'Admin123'});
+
+db.users.update({username:'Admin'},{password:'Admin123'});
+
+db.customers.find().pretty();
+
+Update func's
+upsert
+rename
+set
+unset
+
+db.customers.find().pretty();
