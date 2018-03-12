@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 app.use(bodyParser.json());
 
-User = require('./modals/User');
+User = require('./models/User');
 
 //Connect to Mongoose
 mongoose.connect('mongodb://localhost/myUsers');
